@@ -26,12 +26,13 @@
                 <div class="overflow-hidden shadow-lg bg-gray-900 text-white">
                   <img class="w-full lg:h-80 md:h-60" src="./images/player1.png" alt="Sunset in the mountains" />
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-4 text-center">Lionel Messi</div>
+                    <h4 id="name1" class="font-bold text-xl mb-4 text-center">Lionel Messi</h4>
                     <div class="grid grid-cols-2">
                       <p class="text-base text-center">36 Goals</p>
                       <p class="text-base text-center">120 Assist</p>
                     </div>
                     <button
+                      id="player1"
                       class="shadow bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-8 w-full mt-4"
                     >
                       SELECT
@@ -43,12 +44,13 @@
                 <div class="overflow-hidden shadow-lg bg-gray-900 text-white">
                   <img class="w-full lg:h-80 md:h-60" src="./images/player2.png" alt="Sunset in the mountains" />
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-4 text-center">Neymar Jr</div>
+                    <h4 id="name2" class="font-bold text-xl mb-4 text-center">Neymar Jr</h4>
                     <div class="grid grid-cols-2">
                       <p class="text-base text-center">36 Goals</p>
                       <p class="text-base text-center">120 Assist</p>
                     </div>
                     <button
+                      id="player2"
                       class="shadow bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-8 w-full mt-4"
                     >
                       SELECT
@@ -60,12 +62,13 @@
                 <div class="overflow-hidden shadow-lg bg-gray-900 text-white">
                   <img class="w-full lg:h-80 md:h-60" src="./images/player3.png" alt="Sunset in the mountains" />
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-4 text-center">Kylian Mbappé</div>
+                    <h4 id="name3" class="font-bold text-xl mb-4 text-center">Kylian Mbappé</h4>
                     <div class="grid grid-cols-2">
                       <p class="text-base text-center">36 Goals</p>
                       <p class="text-base text-center">120 Assist</p>
                     </div>
                     <button
+                      id="player3"
                       class="shadow bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-8 w-full mt-4"
                     >
                       SELECT
@@ -77,12 +80,13 @@
                 <div class="overflow-hidden shadow-lg bg-gray-900 text-white">
                   <img class="w-full lg:h-80 md:h-60" src="./images/player4.png" alt="Sunset in the mountains" />
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-4 text-center">Vítor Machado</div>
+                    <h4 id="name4" class="font-bold text-xl mb-4 text-center">Vítor Machado</h4>
                     <div class="grid grid-cols-2">
                       <p class="text-base text-center">36 Goals</p>
                       <p class="text-base text-center">120 Assist</p>
                     </div>
                     <button
+                      id="player4"
                       class="shadow bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-8 w-full mt-4"
                     >
                       SELECT
@@ -94,12 +98,13 @@
                 <div class="overflow-hidden shadow-lg bg-gray-900 text-white">
                   <img class="w-full lg:h-80 md:h-60" src="./images/player5.png" alt="Sunset in the mountains" />
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-4 text-center">Sergio Ramos</div>
+                    <h4 id="name5" class="font-bold text-xl mb-4 text-center">Sergio Ramos</h4>
                     <div class="grid grid-cols-2">
                       <p class="text-base text-center">36 Goals</p>
                       <p class="text-base text-center">120 Assist</p>
                     </div>
                     <button
+                      id="player5"
                       class="shadow bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-8 w-full mt-4"
                     >
                       SELECT
@@ -111,12 +116,13 @@
                 <div class="overflow-hidden shadow-lg bg-gray-900 text-white">
                   <img class="w-full lg:h-80 md:h-60" src="./images/player6.png" alt="Sunset in the mountains" />
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-4 text-center">Renato Sanches</div>
+                    <h4 id="name6" class="font-bold text-xl mb-4 text-center">Renato Sanches</h4>
                     <div class="grid grid-cols-2">
                       <p class="text-base text-center">36 Goals</p>
                       <p class="text-base text-center">120 Assist</p>
                     </div>
                     <button
+                      id="player6"
                       class="shadow bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-8 w-full mt-4"
                     >
                       SELECT
@@ -131,12 +137,8 @@
             <div class="lg:w-2/12 mb:w-3/12">
               <div class="p-4 mb-4 bg-gray-900 text-white">
                 <h2 class="text-3xl font-semibold text-center">Selected - V</h2>
-                <ul class="list-decimal list-inside text-xl my-7 font-medium">
-                  <li class="">Lionel Messi</li>
-                  <li class="">Lionel Messi</li>
-                  <li class="">Lionel Messi</li>
-                  <li class="">Lionel Messi</li>
-                  <li class="">Lionel Messi</li>
+                <ul id="bestPlayer" class="list-decimal list-inside text-xl my-7 font-medium">
+                  <!-- Best Player list  -->
                 </ul>
               </div>
               <div class="p-4 bg-gray-900 text-white">
@@ -221,5 +223,8 @@
       <hr />
       <p class="text-center text-white text-lg my-12">Copyright @ 2022 All Rights Reserved.</p>
     </footer>
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/player.js"></script>
   </body>
 </html>
