@@ -1,3 +1,11 @@
+// check player list and count
+function totalPlayers() {
+  const bestPlayers = document.querySelectorAll("#bestPlayer > li");
+  const totalPlayer = bestPlayers.length;
+  return totalPlayer;
+}
+
+// Get player Name and add player list
 function getPlayerById(name, selectButton) {
   // get player Name
   const playerElement = document.getElementById(name);
@@ -11,11 +19,10 @@ function getPlayerById(name, selectButton) {
   // selected player Button disabled
   let selectButtonElement = document.getElementById(selectButton);
   selectButtonElement.disabled = true;
-  selectButtonElement.style.opacity = "50%";
+  selectButtonElement.style.opacity = "40%";
 
   // player select validation
-  const bestPlayers = document.querySelectorAll("#bestPlayer > li");
-  const totalPlayer = bestPlayers.length;
+  const totalPlayer = totalPlayers();
   if (totalPlayer === 5) {
     selectButtonElement.disabled = false;
     selectButtonElement.style.opacity = "100%";
@@ -24,4 +31,33 @@ function getPlayerById(name, selectButton) {
   } else {
     playerList.appendChild(li);
   }
+}
+
+// Text Element value set
+function setValueById(elementId, value) {
+  const textElement = document.getElementById(elementId);
+  textElement.innerText = value;
+}
+
+// get data form Input Element
+
+function getInputValueById(elementId) {
+  const expenseInputElement = document.getElementById(elementId);
+  const expenseInputString = expenseInputElement.value;
+  const expenseInput = parseFloat(expenseInputString);
+
+  // reset input field
+  // expenseInputElement.value = "";
+
+  return expenseInput;
+}
+
+// get data form Element
+
+function getElementDataById(elementId) {
+  const expenseElementData = document.getElementById(elementId);
+  const expenseElementDataString = expenseElementData.innerText;
+  const expenseData = parseFloat(expenseElementDataString);
+
+  return expenseData;
 }
