@@ -44,6 +44,12 @@ function setValueById(elementId, value) {
 function getInputValueById(elementId) {
   const expenseInputElement = document.getElementById(elementId);
   const expenseInputString = expenseInputElement.value;
+
+  //Input Field Validation
+  if (isNaN(expenseInputString)) {
+    alert("please Enter a Valid Number!!");
+  }
+
   const expenseInput = parseFloat(expenseInputString);
 
   // reset input field
